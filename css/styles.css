@@ -201,7 +201,6 @@ button:focus,
 }
 
 .project__item {
-  display: flex;
   flex-direction: column;
   background-color: #f8f9fa;
   border-radius: 10px;
