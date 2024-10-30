@@ -364,3 +364,80 @@ button:focus,
 p {
   text-align: justify;
 }
+
+/* Set up a grid layout for the project list */
+.project-list {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style each project item */
+.project__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Set layout and alignment for project content */
+.project__item-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Ensure consistent image size and center alignment */
+.project__item-screenshot img {
+  width: 100%;
+  max-width: 800px; /* Sets a consistent max width */
+  max-height: 300px; /* Limits the height */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Fills the area without stretching */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style project text */
+.project__item-text {
+  flex: 1;
+}
+
+/* Headings and descriptions */
+.project__item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project__item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Technology section styling */
+.project__item-technologies {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.project__item-technologies p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.link__secondary {
+  color: #0073e6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link__secondary:hover {
+  text-decoration: underline;
+}
